@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <img src="img/8304.jpg" alt="" class="bg">
+        <header>
+            <a href="#" class="logo">Ramadan</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >About</a></li>
+                <li><a href="#" >Calender</a></li>
+                <li><a href="#" >Blog</a></li>
+                <li><a href="#" >Home</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Happy Ramadan Kareem</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eveniet ipsum quos totam dicta ratione 
+                    quisquam praesentium qui exercitationem modi 
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png" alt="" srcset="" class="icon"></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="" srcset=""  class="icon"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="" srcset="" class="icon"></a></li>
+        </ul>
+    </section>
+</body>
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const nav = document.querySelector('.navigation');
+    menuToggle.onclick = function(){
+       if(menuToggle.classList.contains('active')){
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+       }else{
+            menuToggle.classList.add('active');
+            nav.classList.add('active');
+       }
+    }
+   
+ 
+</script>
+</html>
